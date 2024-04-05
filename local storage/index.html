@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>form</title>
+  <style>
+    #box img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+    }
+
+    #box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    #box button {
+      margin: 10px;
+    }
+
+    button {
+      background-color: rgb(196, 199, 194);
+      width: 70px;
+      height: 30px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    #form2 {
+      background-color: rgb(196, 199, 194);
+      width: 300px;
+      height: 300px;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    form input {
+      margin-top: 10px;
+      width: 230px;
+      height: 25px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    form select {
+      width: 230px;
+      height: 25px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    #total {
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <div id="form2">
+      <form id="form">
+        <input type="text" id="title" placeholder="Enter title" /><br /><br />
+        <input type="text" id="content" placeholder="Enter content" /><br /><br />
+        <input type="number" id="price" placeholder="Enter price" /><br /><br />
+        <input type="url" id="img" placeholder="Enter ulr" required /><br /><br />
+        <input type="submit" value="insert" />
+      </form>
+    </div>
+  </center>
+  <br />
+
+  <hr />
+  <div id="box"></div>
+</body>
+<script src="index.js"></script>
+
+</html>
